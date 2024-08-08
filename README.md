@@ -1,48 +1,41 @@
-# Product Listing Application
+# E-Commerce Product Listing Application
 
-## Overview
+## Description
 
-The Product Listing Application is a full-stack platform designed to facilitate product listings and sales. With an intuitive interface and robust features, this application provides a seamless experience for both sellers and buyers. It includes user authentication, dynamic product search, and rich text editing for product descriptions.
+This project is a simple e-commerce product listing application that allows users to view products, add new products, and search for products. The application includes a frontend built with Vue.js, a backend built with Node.js and Express, and uses MongoDB for database management. Authenticated users can add new products, and all users can view and search the product listing.
 
 ## Features
 
-- **User Authentication**: Secure login and registration.
-- **Product Listings**: Add, edit, and manage product details.
-- **Rich Text Editor**: Use TipTap for detailed product descriptions.
-- **Dynamic Search**: Filter products by name and other criteria.
-- **Responsive Design**: Mobile and desktop optimized.
-- **State Management**: Efficient state handling with Vuex.
-- **Backend Integration**: Express.js server with MongoDB for data storage.
+- **Product Listing Page**: Displays products with details such as name, description, price, and image.
+- **Add New Product**: Allows authenticated users to add new products.
+- **Search Functionality**: Filter products by name using a search bar.
+- **User Authentication**: Login form for user authentication.
+- **Responsive Design**: Compatible with various devices.
 
 ## Technologies Used
 
 ### Frontend
 
-- **Vue.js**: A progressive JavaScript framework for building user interfaces.
-- **Vuetify**: A material design component framework.
-- **Vuex**: A state management pattern + library.
-- **TipTap**: A renderless and extendable rich-text editor for Vue.js.
-- **Vue Router**: The official router for Vue.js.
-- **Vue Toastification**: Vue notifications made easy.
-
+- **Vue.js**: JavaScript framework for building the user interface.
+- **Vue Router**: For navigation between pages.
+- **Vuex**: State management library for Vue.js.
+- **CSS Framework**: Tailwind CSS 
 ### Backend
 
-- **Node.js**: JavaScript runtime built on Chrome's V8 JavaScript engine.
-- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
-- **MongoDB**: NoSQL database for modern web applications.
+- **Node.js**: JavaScript runtime for the server-side application.
+- **Express**: Web application framework for Node.js.
+- **JWT**: JSON Web Tokens for authentication.
+- **Mongoose**: ODM for MongoDB 
 
-## Installation
+### Database
 
-To get a local copy up and running, follow these steps:
+- **MongoDB**: NoSQL database.
 
-### Prerequisites
+## Setup Instructions
 
-- Node.js
-- npm
-- MongoDB
+### Frontend
 
-### Installation Steps
-
-1. **Clone the repository**
-   ```sh
-   git clone https://github.com/yourusername/product-listing-app.git
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/e-commerce-app.git
+   cd e-commerce-app
