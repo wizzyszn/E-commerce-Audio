@@ -41,7 +41,7 @@
     </script>
 
     <template>
-        <div class="h-svh border-2 flex items-center flex-col gap-4 p-[10%] rounded-sm">
+        <div class="h-svh border-2 flex items-center flex-col gap-4 p-[10%] rounded-sm max-sm:p-[30%]">
             <div class=" flex flex-col gap-3  shadow-xl p-4">
                 <form @submit.prevent="handleSubmit" class=" flex flex-col gap-3">
                     <div class="flex flex-col justify-center">

@@ -1,9 +1,15 @@
 const Product = require("../models/product");
-const { rawListeners } = require("../models/user");
-
 //create a product
 module.exports.createProduct = async(req,res) =>{
     const {name, description, price, imageURL, category, brand, stockQuantity,createdBy,ratings,weight,dimensions,color,size} = req.body;
+    console.log("products:", {
+    name,
+    description,
+    price,
+    imageURL,
+    category,
+    brand, stockQuantity,createdBy,ratings,weight,dimensions,color,size
+      })
     if(!name||!description||!imageURL||!category||!price||!stockQuantity||!createdBy||!brand){
         return res.status(400).json({message : "Provide all required details"});
     }

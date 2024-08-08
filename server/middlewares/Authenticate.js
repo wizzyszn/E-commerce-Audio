@@ -6,7 +6,7 @@ module.exports.authenticate = async (req,res,next) =>{
     jwt.verify(token,process.env.JWT_SECRET_KEY,(err,user)=>{
         if(err){
             if(err.name === "TokenExpiredError"){
-                return res.status(403).json({message : "Session expired"})
+                return res.status(403).json({message : "Session expired login again to continue"})
             }
             if(err.name === "JsonWebTokenError"){
                 return res.status(403).json({message : "Invalid token"})

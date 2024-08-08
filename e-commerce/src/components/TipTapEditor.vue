@@ -5,7 +5,7 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, onBeforeUnmount, defineProps, defineEmits } from 'vue';
+  import { ref, onMounted, onBeforeUnmount } from 'vue';
   import { EditorContent, useEditor } from '@tiptap/vue-3';
   import StarterKit from '@tiptap/starter-kit';
   
